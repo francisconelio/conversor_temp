@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <div class="container">
+        <h2> Conversor de Celsius (°C) para Fahrenheit (F)</h2>
+        <p> Legenda: °C (Celsius) e F(Fahrenheit)</p>
+        <form>
+           
+        <label> Coloque a Temperatura em Celsius (°C):</label>
+        <input type="number" name="celsius" id="celsius" placeholder="Digite o valor em °C">
+        <input type="button" value="Converter!" onclick="convertToF()">
+        <button type="reset">Limpar</button><br><br>
+       
+        <label> Coloque a Temperatura em Fahrenheit (°F):</label>
+        <input type="number" name="fahrenheit" id="fahrenheit" placeholder="Digite o valor em °F">
+        <input type="button" value="Converter!" onclick="convertToC()" >
+        <button type="reset" >Limpar</button><br><br>
+        <button type="reset" onclick="limpar()">Limpar tudo</button><br><br>        
+    </form>
+    <div class="resultado">
+        Resultado (°C para F):<p></p>
+        Resultado (F para °C):<p></p>
+       
+    </div>
+    </div>
+    
+</body>
+</html>

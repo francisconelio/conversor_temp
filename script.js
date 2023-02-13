@@ -23,3 +23,9 @@ function limpar(){
     document.getElementsByTagName('p')[1].innerHTML=''
     document.getElementsByTagName('p')[2].innerHTML=''
 }
+
+function escolher(){
+    let c = document.getElementById('c').value;
+    let f = c * 1.8 + 32
+    console.log(f.toFixed(2).replace('.', ','))
+}
